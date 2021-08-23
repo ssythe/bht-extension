@@ -13,7 +13,7 @@ if(url.includes("user/")){
 
 	fetch(api + userId)
 		.then(response => response.json())
-    	.then(user => {
+    		.then(user => {
 			if (response.status == "success") {
 				info.innerHTML = `<div class="top blue">
 					User info
