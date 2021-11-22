@@ -1,4 +1,5 @@
 var url = window.location.href
+const api = "https://brick-hill.trade/api/extension/user/"
 
 if(url.includes("user/")){
     var url = window.location.href.split('/')
@@ -10,7 +11,7 @@ if(url.includes("user/")){
 	var info = document.createElement("div")
 	info.className = "card"
 
-	fetch("https://brick-hill.trade/api/extension/user/" + user_id)
+  fetch(api + user_id)
 		.then(response => response.json())
 		.then((response) => {
 			if (response.status == "success") {

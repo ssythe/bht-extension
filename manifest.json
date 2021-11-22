@@ -24,14 +24,8 @@
         "notifications",
         "background"
 	],
-    
-    "background": {
-        "scripts": [
-            "notify.js"
-        ]
-    },
-    
-    "content_scripts": [
+
+	"content_scripts": [
 
 		{
 			"matches": ["https://www.brick-hill.com/shop/*"],
@@ -61,13 +55,7 @@
 		{
 			"matches": ["https://www.brick-hill.com/forum/3/create/"],
 			"js": ["ask.js"]
-		},
-
-		{
-			"matches": ["https://www.brickplanet.com/*"],
-			"js": ["brickplanet.js"]
 		}
-
 	]
 
 }
