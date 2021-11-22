@@ -11,9 +11,9 @@ if(url.includes("user/")){
 	var info = document.createElement("div")
 	info.className = "card"
 
-	fetch(api + user_id)
+  fetch(api + user_id)
 		.then(response => response.json())
-    		.then(response => {
+		.then((response) => {
 			if (response.status == "success") {
 				info.innerHTML = `<div class="top blue">
 					User info
